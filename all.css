@@ -3,3 +3,14 @@ h1{
     font-size: 50px;
     color: rgb(75, 75, 255);
 }
+
+.h2{
+    font-size: 30px;
+    color: rgb(74, 74, 189);
+}
+
+.header{
+    background-color: #efefef;
+    text-align: center;
+    margin: 5 auto;
+}
