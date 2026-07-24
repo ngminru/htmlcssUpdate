@@ -1,0 +1,76 @@
+/* 設定產品圖片 */
+.product-row{
+    /* 設定flex排版 */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.product-col{
+    /* 設定欄位格線寬度 */
+    /* 12格6個欄位寬 */
+    width: calc(100% / 12 *6);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.product-col img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 產品描述 */
+/* 文字刪除樣式設定 */
+.del-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-500);
+    padding-left: 8px;
+}
+
+/* 產品顏色 */
+.product-color{
+    width: 64px;
+    text-align: center;
+    color: var(--neutral-600);
+}
+
+/* 產品尺寸按鈕樣式 */
+.btn-product-size{
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+}
+
+/* 啟用按鈕樣式 */
+/* :hover 表示滑鼠滑過按鈕時變化 */
+/* .btn-product-size(這裡不能有空格，否則無法套用樣式).active, */
+.btn-product-size.active,
+.btn-product-size:hover{
+    border-color: var(--neutral-900);
+}
+
+/* 產品收藏/試穿 */
+    .product-action{
+        /* 設定flex排列及gap間距 */
+        display: flex;
+        gap: 8px;
+    }
+    .product-action .btn{
+        /* 寬度為欄位50% */
+        width: 50%;
+    }
+    /* 設定icons與文字間距 */
+    .product-action .bi{
+        padding-right: 8px;
+    }
+
+/* 產品資訊 */
+    .product-info-title{
+        font-weight: 500;
+    }
+    .product-info-item p{
+        color: var(--neutral-600);
+    }
+    .product-info-item{
+        border-bottom: 1px solid var(--neutral-300);
+    }
